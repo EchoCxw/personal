@@ -1,0 +1,11 @@
+<p>亲爱的 {{ user.username }},</p>
+<p>欢迎来到 <b>Echo</b>!</p>
+<p>请激活您的账户 <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击这里</a>.</p>
+<p>也可以点击这个链接进行激活:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>如果您没有进行过这个操作,请忽视此邮件.</p>
+<p>祝使用愉快,</p>
+<p>Echo</p>
+<p>
+    <small>提示: 回复此邮件无效.</small>
+</p>

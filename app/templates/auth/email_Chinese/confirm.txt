@@ -1,0 +1,13 @@
+亲爱的 {{ user.username }},
+
+欢迎来到Echo!
+
+点击这个链接完成激活:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+祝使用愉快,
+
+Echo
+
+提示: 回复此邮件无效.
